@@ -1,0 +1,8 @@
+#Ignora la carpeta de node_modules
+node_modules
+
+#Ignora los archivos de texto
+*.txt
+
+#Ignora los archivos relacionados a API keys
+.env

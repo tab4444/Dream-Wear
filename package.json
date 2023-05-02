@@ -1,0 +1,24 @@
+{
+  "name": "dream-wear",
+  "version": "1.0.0",
+  "description": "Aplicación web de la tienda de ropa \"DreamWear\" ubicada en Córdoba.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tab4444/Dream-Wear.git"
+  },
+  "author": "tab4, emiMolinaP, lautaroE3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tab4444/Dream-Wear/issues"
+  },
+  "homepage": "https://github.com/tab4444/Dream-Wear#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
