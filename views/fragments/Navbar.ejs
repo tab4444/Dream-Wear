@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/DropdownNav.css">
+    <title>HOLA</title>
+</head>
+
+<body>
+    
+      <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="/img/Versace.png" height="50" width="50" alt="logo"></a>
+          <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+            </ul>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">     
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><img class="log" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZpJREFUSEu1lf1RwkAQxd8CozMGLqQDS8AKxA60ArEDrIBYAXTA2AEdCBVICXSQD8AZkWSdxWQmgUsuAyb/3t3+9uPtC6Hmj2qOj0qA9XrdJ+YRAT1JiIElE711Op25KUEjYBsELohG2kDMb5Ztu2WQUoBk3mD+YCAAMPyJopnjOP4mDAcAJgTYMdFDWSWlgE0Yzgm4B/BkKTXLZioQAqYMLNpK9YuqMAF8ydJS6uSe53ndq2bTA+BbSjm1AaR9baW65wLqbVE6ZGkDgMEuihbpkAkYA+heNGQpu1aZpn1NFk30flg0/C2a+y+LZtpU03mhTEWG143Gc0z0mFjEsVJ8sYwG8+w7jt9lNjqYFpAMdwrg1pRhcr6KiV50LTsBZJQjpraQXu/3++VxhlJhq9XqEbObbDt0isoBku38PGRewcjS6jJKW+2i6C6bTA7wFQRDJhqb/EXXttS3iPn1xrYn6Z0cIL1kWh4dIOO8OfM7BhzMbRdFTpEqioZeZH45wDYMWQLo3LOKmnTvjX+0KoHP/qNdGlze117BL4v93hmyzXlTAAAAAElFTkSuQmCC"/></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="/carrito"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEvdlNFNwzAQhn83EhJyeqk3gAmgEzACZQLKKzzQEWCC9gVegQkoGzBCmQA2SHtJQEIKh1w1lVGbOEWphPCjfb7vv9++U9jyUlvOj38EyJilMbtEJjqKujbf0qImAQLMQqLOD0ChPk2SkRK5BPCgifqbVPU+mw1EqaF7d+WRP+J47ysIXgFMNZHZBJAyPyvgSICzkOh+bQV2M2OeADhwA32gOI47O0EQ27jPPDfGmGkpwCn1SRP1fMkXomzcI4AXTXRY3FnbB2VqqkAZs7XkFCLXOoquKgELRWMAx3XUuzHSanXDMLQWz1dpJ6fMfQXc1QXYr6lERq76SoA9TJmnCohaeb6/a8xbXZgbVzmLlr4CY0100jjA9kQeBBNbRZ3kmmhFsHeaZsw9AQa2gXyQXwF8SX3n3grmXzZJbiByDqVudbt9USQt26/9yMtEzih3bXAn8Dp7vN/Up7SxCnw+V53XeoM/DfgG2ymXGQGpL8UAAAAASUVORK5CYII="height="20px"/> Carrito</a>
+                <a href="/favoritos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAh5JREFUSEu1VdFxm0AU3MfNeCYBHaKCyBVIqSByBUkqiFRBnAqiVGCnAisVJB1Y6UCuIOoAcYJkxjPwPO8ECGHAKIn5YQbB7tt3uyvCM1/0zPg4iSAxZg1mdn3/dd/BehPExswIuBFgBuae1ss+JKcQrAh4kxOsPK0v/hvBbrebOsy3DEQCSoCfEV0MBoPVUyS9FCTG/ADwFsxfLCDRZwDfXK1n/0zwJwxHmVK/BOg+TQO5nykVyt1J0/MXQbDpIikVJMa8A/MYRCMGRnZQ5iGIJjlAOXFijBzwB/ucec1E23x1GzBvQHTnai2qDzZNjOG2SWT3Kk0nxbSiKlVqLWfR9o2rtR2+VFC1oew3I1oS0dbzvHXXCuI4njDz0GG+BjCu2/jokP/G62EYDs+UugIwy112Wc3IIxfVlCxdredtCiy449zKOVlwx5nWFTfatEpCzJ9e+r7If3TZ6gDGbeBHZ1D/Ot7tron5o3jf9f1FC4FY9FVX6FqDFhtTVMP7wnJ1ksKuXSpbCQrbSriCINiKWyhN92Wn1Fx2bbMDfGfgp6f1tEllI0HRPQAkMJMkihZ5PRwwmBf3Wfa1SHUxSJ2kkeB3FF0y0ZWkNO+efZqPu8imGERD7JPfuMpGgrLcDuPcsePMCgvadWWZ1IUNVr1KqirabLota6DLRcer27han/daUe5vVKduC1tFDeS8ehF0dc+pv/X6wzkVtPr+A4IoDShZK+VSAAAAAElFTkSuQmCC"height="20px"/> Favoritos</a>
+                <div class="dropdown-divider"></div>
+                <% if(session){ %>
+                  <a href="/cerrarsesion"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMtJREFUSEvtVcENwjAMvJuAEYBNyiZlMjoKI8AG7QYwwSFXAUVVJcelQUiQry93sc+OicqHlfnxOQFJDYATgF1BVj2AI8mzh31lIMkubb0LWbwnuffwuYAMTNItm6Ri7F9grICkjmQ758eiEk2JkicXAAeStzy+poDxGrmJmNh4XIFnx3jtOInbjHTfIVDy8izLO4AmVKKAwDWRv2/ydJJXb9Pf/SrMnE2JqQkzkHR3Rz5otnBsOEp2wgCgDS2cwMtDUHe5hNhmwNUFHlt2mBlRyTpkAAAAAElFTkSuQmCC"height="20px"/> Log Out</a>
+
+                  <%}else{ %>
+                    <a href="/login"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAM1JREFUSEvlVcENwkAMsyeADYAJ6AiMUiajm8Ao7QZsYBTpik4nIDnpDglx3zpxYycy0fmxc398j0DSCcAFwD4w1QzgTPLmYZ8TSLKinVeQfZ9JHjx8TiADk3RlkxTG/hGBpInkaDI2lUjSFsAVwBDxpzT9oweShtTcSEILECaQZHLYXVS9csq3E3QnSGaaRHatm+YSrbokk43k2NzkXPxua/rK4aZ38FME93Vbgou/kHSzI78DC5wpmAkLgLEqcIJ/XQ1zw6W6Y1HQneABrA+OGWmRYZUAAAAASUVORK5CYII=" height="20px"/> Sign in</a>
+                      <%}%>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+</body>
+<script>/* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.log')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }</script>
+</html>
