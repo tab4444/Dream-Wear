@@ -43,7 +43,7 @@ router.post("/login", (req, res) => {
               }     
               else {
                   req.session.login = false;
-                  onsole.log("CONTRASEÑA INCORRECTA");
+                  console.log("CONTRASEÑA INCORRECTA");
                   return res.status(200).render("login",{session:req.session.login});
               }
           });
